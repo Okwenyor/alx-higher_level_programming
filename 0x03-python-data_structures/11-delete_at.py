@@ -7,6 +7,7 @@ def delete_at(my_list=[]. idx=0):
         return my_list
 
     del_val = my_list[idx]
+
     for i in range(idx + 1, len(my_list)):
         my_list[i - 1] = my_list[i]
 
