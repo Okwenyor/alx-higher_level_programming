@@ -8,10 +8,10 @@ if __name__ == '__main__":
 
     addition_result = add(a, b)
     subtraction_result = sub(a, b)
-    division_result = div(a, b)
     multiplication_result = mul(a, b)
+    division_result = div(a, b)
 
     print("{} + {} = {}".format(a, b, addition_result))
     print("{} - {} = {}".format(a, b, subtraction_result))
-    print("{} / {} = {}".format(a, b, division_result))
     print("{} * {} = {}".format(a, b, multiplication_result))
+    print("{} / {} = {}".format(a, b, division_result))
