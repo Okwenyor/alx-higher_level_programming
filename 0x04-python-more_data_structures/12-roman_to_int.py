@@ -12,7 +12,7 @@ def roman_to_int(roman_string):
         result = roman_values.get(value, 0)
 
         if result >= old_value:
-            total += result 
+            total += result
 
         else:
             total -= result
@@ -20,8 +20,3 @@ def roman_to_int(roman_string):
         old_value = result
 
     return total
-
-
-# Test cases
-print(roman_to_int("IV"))
-print(roman_to_int("CXXIV"))
