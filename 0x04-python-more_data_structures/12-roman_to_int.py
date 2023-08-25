@@ -4,20 +4,24 @@ def roman_to_int(roman_string):
         return 0
 
     total = 0
-    prev_value = 0
+    old_value = 0
 
     roman_values = {'I': 1, 'V': 5, 'X': 10, 'L': 50,
                     'C': 100, 'D': 500, 'M': 1000}
+    for value in reversed(roman_string):
+        result = roman_values.get(value, 0)
 
-    for char in reversed(roman_string):
-        value = roman_values[char]
-        result = roman_values.get(char, 0)
-
-        if result >= prev_value:
-            total += value
+        if result >= old_value:
+            total += result 
 
         else:
-            total -= value
-            prev_value = value
+            total -= result
+
+        old_value = result
 
     return total
+
+
+# Test cases
+print(roman_to_int("IV"))
+print(roman_to_int("CXXIV"))
