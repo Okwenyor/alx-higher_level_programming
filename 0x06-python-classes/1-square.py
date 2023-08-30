@@ -10,4 +10,3 @@ class Square:
         called size which represents the size of the square"""
 
         self.__size = size
-
